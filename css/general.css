@@ -11,6 +11,10 @@ ul,
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 2em;
+}
+
 body {
   font-family: var(--default-font);
   color: var(--primary-font-color);
@@ -58,6 +62,7 @@ h1 {
   margin: 5px 0;
   line-height: 1rem;
   text-align: left;
+  margin-top: 1em;
 }
 h2 {
   font-size: var(--headline2-size);
@@ -72,6 +77,30 @@ main > h1 {
   line-height: 4rem;
   padding: 5px 3rem 0 3rem;
   width: calc(80% - 6rem);
+}
+
+/* Lavet selv */
+
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "rubik";
+}
+
+@font-face {
+  font-family: "rubik2";
+  src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+p,
+.cta_btn,
+.menuItem {
+  font-family: "rubik2";
 }
 
 /* NAVIGATION STRUCTURES */

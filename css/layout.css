@@ -48,6 +48,7 @@ footer ul {
 #daily,
 #breaking {
   display: grid;
+  border-radius: 50px;
 }
 #daily {
   grid-template-rows: repeat(2, minmax(200px, min-content));

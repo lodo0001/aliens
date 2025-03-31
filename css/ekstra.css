@@ -1,0 +1,48 @@
+#main-disclamer {
+  background-color: #ff4b00;
+}
+
+.daily_card {
+  background-color: white;
+}
+
+.daily_card img {
+  width: 60%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "rubiklight";
+  src: url(../fonts/Rubik/static/Rubik-Light.ttf);
+}
+
+#stat {
+  font-family: "rubiklight";
+  color: white;
+}
+
+.menuItem {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 50px;
+}
+
+.daily_card h2 {
+  margin-top: 1em;
+}
+
+.cta_btn {
+  color: white;
+}
+
+.info-text {
+  border-radius: 40px;
+}
+
+.info-text h2 {
+  margin-top: 2em;
+}
+
+.info-graphic {
+  border-radius: 40px;
+}
