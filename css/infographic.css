@@ -46,3 +46,14 @@
     opacity: 1;
   }
 }
+
+.blink {
+  animation: blinker 3.8s infinite;
+}
+
+@keyframes blinker {
+  to {
+    opacity: 0.4;
+    fill: rgb(0, 174, 255);
+  }
+}
