@@ -30,29 +30,12 @@ document.querySelector("#benCircle").addEventListener("click", benInfo);
 //funktion
 
 function headHighlight() {
-  console.log("headhighlight");
+  console.log("highlight");
   this.style.fill = "#fff";
-}
-function headUnHighlight() {
-  console.log("headUnHighlight");
-  this.style.fill = "#f00";
 }
 
 function headUnHighlight() {
-  console.log("headhighlight");
-  this.style.fill = "#fff";
-}
-function armUnHighlight() {
-  console.log("headUnHighlight");
-  this.style.fill = "#f00";
-}
-
-function headHighlight() {
-  console.log("headhighlight");
-  this.style.fill = "#fff";
-}
-function benUnHighlight() {
-  console.log("headUnHighlight");
+  console.log("unhighlight");
   this.style.fill = "#f00";
 }
 
@@ -120,4 +103,13 @@ function animateBoxes() {
   document
     .querySelector("#requirement")
     .addEventListener("animationend", cleanup);
+}
+
+function cleanup() {
+  console.log("cleanup");
+  document
+    .querySelector("#requirement")
+    .removeEventListener("animationend", cleanup);
+  document.querySelector("#efficiency").classList.remove("fadeIn");
+  document.querySelector("#requirement").classList.remove("fadeIn");
 }
