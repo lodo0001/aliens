@@ -32,15 +32,185 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>INDBERET DIT MØDE MED EN ALIEN HER:</h2>
+          <form id="webform">
+            <div class="form-flex-container">
+              <div class="form-group">
+                <label for="f-name">DIT NAVN:</label>
+                <br />
+                <input id="f-name" name="f-name" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="cpr">CPR-nummer:</label>
+                <input
+                  type="text"
+                  id="cpr"
+                  name="cpr"
+                  pattern="\d{6}-\d{4}"
+                  required
+                  placeholder="DDMMÅÅ-XXXX"
+                /><br /><br />
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  >E-MAIL ADRESSE:
+                  <br />
+                  <span class="instruction"
+                    >Skriv din email så vi evt. kan komme i kontakt med
+                    dig</span
+                  >
+                </label>
+                <br />
+                <input id="email" name="email" type="email" required />
+              </div>
+            </div>
+          </form>
         </article>
-        <form id="webform"></form>
+        <article id="form-info">
+          <form id="webform2">
+            <div class="form-flex-container">
+              <div class="form-group">HAR DU MØDT EN ALIEN FØR?</div>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="alien" value="ja" />
+                  JA
+                </label>
+                <label>
+                  <input type="radio" name="alien" value="nej" />
+                  NEJ
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="start"
+                  >HVORNÅR INDTRAF DU MØDET MED RUMVÆSNET?</label
+                >
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2089-01-02"
+                  min="2089-01-02"
+                  max="2089-12-31"
+                />
+              </div>
+              <div class="form-group">
+                <label for="adresse"
+                  >HVORHENNE SKETE DET?
+                  <span class="instruction"
+                    >Skiv endten den præcise adresse, området eller
+                    bynavnet</span
+                  >
+                </label>
+                <br />
+                <input id="hvor" name="hvorhenne" type="text" />
+              </div>
+
+              <div class="form-group">VAR DE/DEN MUTERET TIL ET MENNESKE?</div>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="menneske" value="ja" />
+                  JA
+                </label>
+                <label>
+                  <input type="radio" name="menneske" value="nej" />
+                  NEJ
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="number"> HVOR MANGE SÅ DU, CIRKA?</label>
+                <input
+                  type="number"
+                  id="antal"
+                  name="number"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider">
+                <label for="truet"
+                  >I HVOR HØJ GRAD VA DE/DEM TRUENDE?
+                  <span id="range-value">0</span>%</label
+                >
+                <input
+                  type="range"
+                  name="truet"
+                  id="truet"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+              </div>
+              <div class="slider-labels">
+                <span class="lidt">SLET IKKE TRUENDE</span>
+                <span class="meget">DELVIS TRUENDE</span>
+                <span class="meget">MEGET TRUENDE</span>
+              </div>
+              <div class="form-group">
+                <label for="bigText">BESKRIV PRÆCIS HVAD DU OPLEVEDE:</label>
+                <br />
+                <textarea
+                  id="bigText"
+                  name="bigText"
+                  rows="5"
+                  cols="50"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="bigText">EKSTRA BEMÆRKNINGER:</label>
+                <br />
+                <textarea
+                  id="bigText2"
+                  name="bigText"
+                  rows="5"
+                  cols="50"
+                ></textarea>
+              </div>
+            </div>
+            <button id="submit_btn" type="submit">INDSEND</button>
+          </form>
+        </article>
       </section>
+
       <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <h2>SUMMARY</h2>
+        <article id="sum">
+          <!-- <p class="placeholder">Opsummering</p> -->
+          <div>
+            <h3>HAR DU MØDT EN ALIEN FØR?</h3>
+            <p id="sumAlien"></p>
+          </div>
+          <div>
+            <h3>HVORNÅR INDTRAF DU MØDET MED RUMVÆSNET?</h3>
+            <p id="sumHvornår"></p>
+          </div>
+          <div>
+            <h3>HVORHENNE SKETE DET?</h3>
+            <p id="sumHvor"></p>
+          </div>
+          <div>
+            <h3>VAR DE/DEN MUTERET TIL ET MENNESKE?</h3>
+            <p id="sumMuteret"></p>
+          </div>
+          <div>
+            <h3>HVOR MANGE SÅ DU, CIRKA?</h3>
+            <p id="sumAntal"></p>
+          </div>
+          <div>
+            <h3>I HVOR HØJ GRAD VAR DE/DEM TRUENDE?</h3>
+            <p id="sumTruende"></p>
+          </div>
+          <div>
+            <h3>HVAD DU OPLEVEDE:</h3>
+            <p id="sumOplevelse"></p>
+          </div>
+          <div>
+            <h3>EKSTRA BEMÆRKNINGER:</h3>
+            <p id="sumBem"></p>
+          </div>
+          <form>
+            <button id="reset_btn" type="reset">GODKEND OG LUK</button>
+          </form>
         </article>
       </section>
     </main>
@@ -70,5 +240,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/form.js "></script>
   </body>
 </html>

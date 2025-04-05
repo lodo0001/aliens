@@ -5,6 +5,7 @@
 .info-text {
   background-color: var(--info-background-color);
   padding: 0;
+  border-radius: 30px;
 }
 .info-text h2 {
   line-height: 3rem;
@@ -22,6 +23,8 @@
 }
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
+  margin-top: 1em;
+  letter-spacing: 1px;
 }
 .info-text p {
   font-size: 0.8rem;

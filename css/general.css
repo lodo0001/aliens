@@ -129,7 +129,7 @@ a {
 #logotype-wrapper > a {
   font-size: var(--logotype-size);
   color: var(--logotype-color);
-  font-family: var(--logotype-font);
+  font-family: "rubik";
   height: 3rem;
   width: 100%;
   display: flex;
@@ -147,7 +147,7 @@ header > nav li > a:after {
   content: " \2192";
 }
 nav a:hover {
-  color: var(--hover-color);
+  color: #ff4b00;
 }
 nav a:active {
   color: var(--active-color);
