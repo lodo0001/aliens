@@ -79,7 +79,7 @@ function submitForm(event) {
   document.querySelector("#sumBehaviour").textContent = myArray.join(", ");
 }
 
-// Resetter Formen og skjuler Summary
+// Resetter Formen og skjuler Summaryy
 function reset() {
   document.querySelector("#webform").reset();
   document.querySelector("#webform2").reset();
