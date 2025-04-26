@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/ekstra.css" />
+    <link id="lightmode" rel="stylesheet" href="css/light.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -17,7 +18,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> ALIEN INVASION!!</a>
+          <a href="index.html"><img src="img/aaa.png" alt="logo" /></a>
         </div>
         <ul class="menu">
           <li>
@@ -39,14 +40,14 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="/img/alienpasfoto.png" alt="billed af en alien" />
+          <img src="/img/voksen.png" alt="billed af en alien" />
           <div class="daily_text">
             <h2>GENKEND EN ALIEN</h2>
             <p>
               Aliens kan mutere sig til mennesker de møder på gaden! Her får du
               3 gode strategier til at udpege og genkende dem.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
@@ -54,34 +55,195 @@
           <div class="daily_text">
             <h2>HAR DU SET EN ALIEN?</h2>
             <p>Indberet dit møde med en alien her.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="register.html" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn_news_red" href="">Læs mere</a>
+          <h3>NÅR KÆRLIGHED GØR EN SINDSYG</h3>
+          <p class="newsDate">12. MARTS 2089 - KL. 13:09</p>
+          <p>
+            Vorlaxians mistede alle børn. I sorg stjæler de menneskebørn som
+            håb. Kærlighed eller kriminalitet?
+          </p>
+          <img src="/img/ked.png" alt="news_img" />
+
+          <dialog id="dialog">
+            <form method="dialog">
+              <h4>
+                NÅR KÆRLIGHED GØR EN SINDSYG - ALIENS I SORG OVER MISTET BØRN
+              </h4>
+              <p class="newDate">12. MARTS 2089 - KL. 13:09</p>
+              <img src="/img/ked.png" alt="news_img" />
+              <p>AF: LOUISE T. DO – Uforklarlige Nyheder, Sektion X</p>
+              <p>
+                På Vorlax-7 døde alle alien-børnene natten over. En sygdom,
+                usynlig og ubeskrivelig, dræbte samtlige under ti år. Det var
+                ikke kun en biologisk katastrofe – det var en psykologisk
+                udslettelse. For de voksne Vorlaxianere, især mødrene, er
+                hjertesorg dødelig. Deres kroppe kan ikke overleve tabet af
+                afkom.
+              </p>
+              <p>
+                I desperation rejser fædrene til Jorden. Ikke som krigere, men
+                som desperate forældre. Deres mål: at bringe et menneskebarn
+                hjem, ikke som fange – men som håb.
+              </p>
+              <p>
+                Men hvad gør det ved os? Når vores børn forsvinder, og vi ser
+                overvågningsvideoer af lysende skibe og bløde skygger i mørket?
+                Er det stadig en forbrydelse, hvis motivet er kærlighed?
+              </p>
+              <p>
+                En ny moralsk gråzone er født. FN’s galaktiske råd kalder det en
+                nødsituation, men mange forældre på Jorden kalder det noget
+                andet: tyveri.
+              </p>
+              <p>
+                Midt i al teknologi og interstellar etik står et enkelt
+                spørgsmål tilbage: Kan et kidnappet barn nogensinde erstatte et
+                elsket barn – og til hvilken pris?
+              </p>
+              <button id="slutknap">LUK NYHED</button>
+            </form>
+          </dialog>
+          <button class="cta_btn_news_red" id="startknap">Læs mere</button>
+          <!-- <a class="cta_btn_news_red" id="startknap" href="">Læs mere</a> -->
         </article>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn_news_blue" href="">Læs mere</a>
+          <h3>ALIEN MUTERET TIL SKOLELÆRER!</h3>
+          <p class="newDate">30. MAJ 2089 - KL. 09:23</p>
+          <p>
+            I mandags blev 4.B på Møllehøj skole bortført af en muteret alien...
+          </p>
+          <img src="/img/klasse.png" alt="news_img" />
+
+          <dialog id="dialog">
+            <form method="dialog">
+              <h4>ALIEN MUTERET TIL SKOLELÆRER - KIDNAPPER EN HEL KLASSE!</h4>
+              <p class="newDate">30. MAJ 2089 - KL. 09:23</p>
+
+              <img src="/img/klasse.png" alt="news_img" />
+              <p>AF: EMILY G - Intergalaktisk korrespondent</p>
+              <p>
+                Det startede som en helt almindelig mandag på Møllehøj Skole.
+                Klokken var 8:15, og 4.B var ved at tage jakkerne af og finde
+                deres pladser. Ingen havde den mindste idé om, at deres
+                nyansatte vikar, “Hr. Vorn”, i virkeligheden var en muteret
+                alien fra planeten Vorlax-7 — og at hele klassen ville være
+                forsvundet inden frokost.
+              </p>
+              <p>
+                Ifølge vidner ankom Hr. Vorn ugen før med perfekte papirer,
+                anbefalinger og et imødekommende smil. Men eleverne anede uråd.
+                “Han blinkede aldrig, og han lugtede lidt som brændt metal,”
+                fortæller Maja, klassens tillidsrepræsentant.
+              </p>
+              <p>
+                Kl. 9:32 gik strømmen i hele bygningen. Samtidig registrerede
+                radarsystemer over hele Europa et svagt, men konstant signal fra
+                skolens tag. Da strømmen kom igen, var både Hr. Vorn og hele 4.B
+                væk. Tavlerne var tomme. Bøgerne lå åbne. Det eneste spor var en
+                glødende kreds på gulvet — og en ensom sko.
+              </p>
+              <p>
+                Myndighederne mistænker nu, at Hr. Vorn er en Vorlaxiansk far i
+                forklædning, drevet af en planetarisk tragedie: På Vorlax-7 er
+                alle alien-børn døde af en dødelig sygdom. For at redde deres
+                koner fra hjertesorg, rejser fædre til Jorden og kidnapper
+                menneskebørn – som en slags sørgelig redningsaktion.
+              </p>
+              <p>Men hvor går grænsen mellem medfølelse og overgreb?</p>
+              <p>
+                En intergalaktisk eftersøgning er sat i gang, og Vorlax-7’s
+                ambassade nægter ethvert kendskab til operationen.
+              </p>
+              <p>
+                Indtil videre er spørgsmålet ubehageligt åbent: Er 4.B tabt for
+                altid – eller vil de en dag vende hjem og fortælle os, hvordan
+                det er at være “adopteret” af en fremmed race?
+              </p>
+
+              <button id="slutknap">LUK NYHED</button>
+            </form>
+          </dialog>
+          <button class="cta_btn_news_blue" id="startknap">Læs mere</button>
+          <!-- <a class="cta_btn_news_blue" href="">Læs mere</a> -->
         </article>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn_news_red" href="">Læs mere</a>
+          <h3>UFO SPOTTET OPPE OVER STRØGET!</h3>
+          <p class="newsDate">4. JUNI 2089 - KL 06:47</p>
+          <p>
+            UFO observeres over København, vækker bekymring om Vorlaxiansk
+            kontakt.
+          </p>
+          <img src="/img/ufo.png" alt="news_img" />
+
+          <dialog id="dialog">
+            <form method="dialog">
+              <h4>UFO SET FLYVE VÆK FRA STRØGET - HVAD VIL DE?</h4>
+              <p class="newsDate">4. JUNI 2089 - KL 06:47</p>
+              <img src="/img/ufo.png" alt="news_img" />
+              <p>AF: GITTE SOFIE – Uforklarlige Nyheder, Sektion X</p>
+              <p>
+                København vågnede op til mere end bare duften af friskbrygget
+                kaffe og morgenbrød. Klokken 06:47 blev en uidentificeret
+                flyvende genstand set svævende over Strøget – midt mellem Zara
+                og Joe & The Juice.
+              </p>
+              <p>
+                “Jeg troede først, det var en drone,” siger baristaen Sille, der
+                som den første opdagede objektet. “Men den var helt lydløs… og
+                den flimrede, som om den var lavet af flydende metal.” Flere
+                forbipasserende fangede øjeblikket på mobilkamera, og videoerne
+                er allerede gået viralt under hashtagget #StrøgetUFO.
+              </p>
+              <p>
+                UFO’en blev observeret i præcis tre minutter og 19 sekunder,
+                hvorefter den forsvandt lodret op i himlen – uden en lyd.
+                Politiet henviser til “et muligt eksperimentelt fly fra et
+                nordisk land”, mens eksperter i astrobiologi er langt mere
+                bekymrede.
+              </p>
+              <p>
+                “Denne type fænomener matcher tidligere Vorlaxianske
+                kontaktmønstre,” siger professor Elvira Nørby fra Det
+                Intergalaktiske Observatorium. “Især deres scout-fartøjer – som
+                typisk kommer for at kortlægge børnerige områder.”
+              </p>
+              <p>
+                Kort tid efter observationen rapporterede flere forældre i Indre
+                By, at deres børn havde haft “mærkelige drømme om at svæve over
+                byen i bløde, varme rumskibe”. Tilfældighed?
+              </p>
+              <p>
+                Københavns borgmester har indkaldt til pressemøde og kalder
+                episoden “uheldig, men fascinerende”. I mellemtiden er turister
+                strømmet til området for at opleve stedet, hvor UFO’en blev
+                spottet – og Joe & The Juice har lanceret en ny smoothie: “Alien
+                Avocado”.
+              </p>
+              <button id="slutknap">LUK NYHED</button>
+            </form>
+          </dialog>
+          <button class="cta_btn_news_red" id="startknap">Læs mere</button>
+          <!-- <a class="cta_btn_news_red" href="">Læs mere</a> -->
         </article>
       </section>
     </main>
-
+    <hr class="footer-line" />
     <footer>
-      <nav class="some">
+      <div class="dark-mode">
+        <legend id="switchtext">Dark Mode</legend>
+        <label class="switch">
+          <input id="switchBtn" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- <nav class="some">
         <ul>
           <li><a href="">link</a></li>
           <li><a href="">link</a></li>
@@ -104,8 +266,9 @@
           <li><a href="">link</a></li>
           <li><a href="">link</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </footer>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/front.js"></script>
   </body>
 </html>

@@ -2,15 +2,6 @@
   background-color: #ff4b00;
 }
 
-.daily_card {
-  background-color: white;
-}
-
-.daily_card img {
-  width: 60%;
-  margin: auto;
-}
-
 @font-face {
   font-family: "rubiklight";
   src: url(../fonts/Rubik/static/Rubik-Light.ttf);
@@ -37,4 +28,60 @@
 
 .info-text h2 {
   margin-top: 2em;
+}
+
+/* css til dark mode knappen */
+
+.dark-mode {
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#switchtext {
+  color: black;
+  font-family: "rubik2";
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(199, 180, 156);
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #ff4b00;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider::before {
+  translate: 100% 0;
+}
+
+footer {
+  background-color: #fceb94;
 }

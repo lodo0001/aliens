@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
     <link rel="stylesheet" href="css/ekstra.css" />
+    <link id="lightmode" rel="stylesheet" href="css/light.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -16,7 +17,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> ALIEN INVASION!! </a>
+          <a href="index.html"><img src="img/aaa.png" alt="logo" /></a>
         </div>
         <ul class="menu">
           <li>
@@ -3734,9 +3735,16 @@
         <aside id="requirement" class="info-box green hide">INFO-BOX</aside>
       </section>
     </main>
-
+    <hr class="footer-line" />
     <footer>
-      <nav class="some">
+      <div class="dark-mode">
+        <legend id="switchtext">Dark Mode</legend>
+        <label class="switch">
+          <input id="switchBtn" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- <nav class="some">
         <ul>
           <li><a href="">link</a></li>
           <li><a href="">link</a></li>
@@ -3759,8 +3767,9 @@
           <li><a href="">link</a></li>
           <li><a href="">link</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/front.js"></script>
   </body>
 </html>

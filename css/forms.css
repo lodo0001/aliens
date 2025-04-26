@@ -118,7 +118,7 @@ button::after {
   margin-bottom: 2em;
 }
 
-.slider {
+.sliderr {
   font-family: "rubik";
   display: grid;
   gap: 0.3rem;
@@ -126,7 +126,7 @@ button::after {
   transition: all 1.5s;
 }
 
-.slider-labels {
+.sliderr-labels {
   justify-content: space-between;
   display: flex;
   font-family: "rubik2";
