@@ -11,6 +11,10 @@ ul,
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 2em;
+}
+
 body {
   font-family: var(--default-font);
   color: var(--primary-font-color);
@@ -40,8 +44,6 @@ footer {
 }
 main section {
   padding: 20px;
-  /* margin: 10px; */
-  /* border: 1px solid var(--border-color); */
   border-radius: var(--border-radius);
 }
 h1,
@@ -58,6 +60,7 @@ h1 {
   margin: 5px 0;
   line-height: 1rem;
   text-align: left;
+  margin-top: 1em;
 }
 h2 {
   font-size: var(--headline2-size);
@@ -72,6 +75,30 @@ main > h1 {
   line-height: 4rem;
   padding: 5px 3rem 0 3rem;
   width: calc(80% - 6rem);
+}
+
+/* Lavet selv */
+
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "rubik";
+}
+
+@font-face {
+  font-family: "rubik2";
+  src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+p,
+.cta_btn,
+.menuItem {
+  font-family: "rubik2";
 }
 
 /* NAVIGATION STRUCTURES */
@@ -95,17 +122,23 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 0 1rem;
+  padding: 2 0 0 1rem;
+  height: 70px;
 }
 #logotype-wrapper > a {
   font-size: var(--logotype-size);
   color: var(--logotype-color);
-  font-family: var(--logotype-font);
-  height: 3rem;
+  font-family: "rubik";
   width: 100%;
-  display: flex;
   align-items: center;
 }
+
+#logotype-wrapper img {
+  width: 50%;
+  padding-left: 6em;
+  padding-top: 3em;
+}
+
 header nav li a {
   margin: 1.5rem;
   background-color: var(--followup-text-bg-color);
@@ -118,7 +151,7 @@ header > nav li > a:after {
   content: " \2192";
 }
 nav a:hover {
-  color: var(--hover-color);
+  color: #ff4b00;
 }
 nav a:active {
   color: var(--active-color);
@@ -137,4 +170,17 @@ footer a {
 }
 .green {
   background-color: var(--info-bg-color-green);
+}
+
+.footer-line {
+  position: relative;
+  border: none;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-top: 40px;
+}
+
+.hr {
+  margin-top: 2rem;
 }
